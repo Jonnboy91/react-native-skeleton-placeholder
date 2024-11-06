@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --max-warnings 0",
     "build": "rm -rf ./lib && mkdir ./lib && tsc",
+    "prepare": "npm run build",
     "prepack": "yarn build"
   },
   "keywords": [
@@ -23,7 +24,7 @@
   "license": "ISC",
   "devDependencies": {
     "@react-native-community/eslint-config": "3.0.3",
-    "@react-native-masked-view/masked-view": "^0.2.8",
+    "@react-native-masked-view/masked-view": "^0.3.2",
     "@types/prop-types": "^15.7.3",
     "@types/react": "^16.9.17",
     "@types/react-native": "^0.63.17",
@@ -37,7 +38,7 @@
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "@react-native-masked-view/masked-view": "^0.2.8",
+    "@react-native-masked-view/masked-view": "^0.3.2",
     "react": ">=0.14.8",
     "react-native": ">=0.50.1",
     "react-native-linear-gradient": "^2.5.6"
